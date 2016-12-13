@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jon.inaflash.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:background="@android:color/holo_red_light"
+    android:background="@android:color/holo_red_light">
+
+    <TextView
+        android:text="Would you like to study or create a new deck?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+
+    <TextView
+        android:text="Welcome to In A Flash!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView2"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="ADD SUBJECT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newDeckButton"
+        android:onClick="editButtonClick"
+        tools:backgroundTint="@android:color/background_light"
+        tools:foregroundTint="@android:color/holo_red_light"
+        android:layout_marginBottom="126dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Study!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studyButton"
+        android:onClick="studyButtonClick"
+        android:backgroundTint="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/newDeckButton"
+        android:layout_alignStart="@+id/newDeckButton"
+        android:layout_alignRight="@+id/newDeckButton"
+        android:layout_alignEnd="@+id/newDeckButton" />
+</RelativeLayout>

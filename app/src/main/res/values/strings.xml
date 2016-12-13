@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InAFlash</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_or_edit">CreateOrEdit</string>
+    <string name="title_activity_editing_or_making_deck">EditingOrMakingDeck</string>
+    <string name="title_activity_select_subject_to_edit">selectSubjectToEdit</string>
+    <string name="title_activity_new_subject__name">new_subject_Name</string>
+
+    <string name="title_activity_note_card_front">NoteCardFront</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
